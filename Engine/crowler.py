@@ -80,8 +80,9 @@ class Module:
         self.js_loading = True
 
     def get_data(self, dictionary, data):
+        html = ""
         if data and "tag" in dictionary:
-            html = BeautifulSoup(str(html), features="lxml")
+            html = BeautifulSoup(str(data), features="lxml")
             data = html.find(dictionary["tag"])
 
         if data and "attr" in dictionary :
