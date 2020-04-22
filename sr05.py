@@ -16,10 +16,4 @@ html = ""
 import Youtube
 
 Youtube.Module.execute();
-
-# SAVE INTO A FILE
-f = open('index.html','w');
-f.write(html)
-f.close()
-
 #################################################################################
